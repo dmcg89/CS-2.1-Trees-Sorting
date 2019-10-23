@@ -19,8 +19,12 @@ def bubble_sort(items):
     TODO: Running time: ??? Why and under what conditions?
     TODO: Memory usage: ??? Why and under what conditions?"""
     # Repeat until all items are in sorted order
-    # TODO: Swap adjacent items that are out of order
-
+    while not is_sorted(items):
+      for index in range(len(items) - 1):
+        if items[index] > items[index + 1]:
+          # Swap adjacent items that are out of order
+          items[index], items[index + 1] = items[index + 1], items[index]
+    return items
 
 def selection_sort(items):
     """Sort given items by finding minimum item, swapping it with first
@@ -42,5 +46,6 @@ def insertion_sort(items):
     # TODO: Insert it in sorted order in front of items
 
 if __name__ == '__main__':
-  numbers = [1, 3, 2]
+  numbers = [1, 3, 2, 4, 7, -1]
   print(is_sorted(numbers))
+  print(bubble_sort(numbers))
