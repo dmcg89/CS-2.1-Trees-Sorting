@@ -13,7 +13,7 @@ def is_sorted(items):
 
 
 
-def bubble_sort(items):
+def bubble_sort_slow(items):
     """Sort given items by swapping adjacent items that are out of order, and
     repeating until all items are in sorted order.
     TODO: Running time: ??? Why and under what conditions?
@@ -24,6 +24,23 @@ def bubble_sort(items):
         if items[index] > items[index + 1]:
           # Swap adjacent items that are out of order
           items[index], items[index + 1] = items[index + 1], items[index]
+    return items
+  
+def bubble_sort(items):
+    """Sort given items by swapping adjacent items that are out of order, and
+    repeating until all items are in sorted order.
+    TODO: Running time: ??? Why and under what conditions?
+    TODO: Memory usage: ??? Why and under what conditions?"""
+    # use number of swaps instead of is_sorted
+    swaps = 0
+    while swaps < 2:
+      # reset swaps before they occur
+      swaps = 0
+      for index in range(len(items) - 1):
+        if items[index] > items[index + 1]:
+          # Swap adjacent items that are out of order
+          items[index], items[index + 1] = items[index + 1], items[index]
+          swaps += 1
     return items
 
 def selection_sort(items):
@@ -46,6 +63,6 @@ def insertion_sort(items):
     # TODO: Insert it in sorted order in front of items
 
 if __name__ == '__main__':
-  numbers = [1, 3, 2, 4, 7, -1]
+  numbers = [1, -1, 3, 2, 4, 7]
   print(is_sorted(numbers))
   print(bubble_sort(numbers))
