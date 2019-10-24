@@ -13,13 +13,23 @@ def counting_sort(numbers):
     TODO: Memory usage: ??? Why and under what conditions?"""
     # Find range of given numbers (minimum and maximum integer values)
     rng = min_max(numbers)
+
     # Create list of counts with a slot for each number in input range
-    counts = []
-    for _ in range(rng[0], rng[1] + 1):
-      counts.append(0)
-    # TODO: Loop over given numbers and increment each number's count
-    # TODO: Loop over counts and append that many numbers into output list
+    counts = [0] * (rng[1] - rng[0] + 1)
+
+    # Loop over given numbers and increment each number's count
+    for num in numbers:
+      index = num - rng[0]
+      counts[index] += 1
+
+    new_items = []
+    #  Loop over counts and append that many numbers into output list
+    for index in range(len(counts)):
+      num = rng[0] + index
+      nums = [num] * counts[index]
+      new_items.extend(nums)
     # FIXME: Improve this to mutate input instead of creating new output list
+    return new_items
 
 
 def bucket_sort(numbers, num_buckets=10):
@@ -35,5 +45,5 @@ def bucket_sort(numbers, num_buckets=10):
     # FIXME: Improve this to mutate input instead of creating new output list
 
 if __name__ == '__main__':
-  numbers = [1, 2, 3]
+  numbers = [2, 1, 4, 7, 6, 2, 1, 2]
   print(counting_sort(numbers))
