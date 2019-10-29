@@ -19,6 +19,7 @@ def bubble_sort_slow(items):
     TODO: Running time: ??? Why and under what conditions?
     TODO: Memory usage: ??? Why and under what conditions?"""
     # Repeat until all items are in sorted order
+    # for index, item in enumerate(items):
     while not is_sorted(items):
       for index in range(len(items) - 1):
         if items[index] > items[index + 1]:
@@ -105,5 +106,5 @@ def insertion_sort(items):
     return items
 
 if __name__ == '__main__':
-  nums = [4, 2, 5 ,6, 3]
-  print(insertion_sort(nums))
+  nums = [4, 10, 2, 5 ,6, 3]
+  print(bubble_sort_slow(nums))

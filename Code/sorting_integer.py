@@ -37,7 +37,8 @@ def bucket_sort(numbers, num_buckets=10):
     then sorting each bucket and concatenating all buckets in sorted order.
     TODO: Running time: ??? Why and under what conditions?
     TODO: Memory usage: ??? Why and under what conditions?"""
-    # TODO: Find range of given numbers (minimum and maximum values)
+    # Find range of given numbers (minimum and maximum values)
+    rng = min_max(numbers)
     # TODO: Create list of buckets to store numbers in subranges of input range
     # TODO: Loop over given numbers and place each item in appropriate bucket
     # TODO: Sort each bucket using any sorting algorithm (recursive or another)
