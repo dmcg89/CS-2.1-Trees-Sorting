@@ -13,13 +13,15 @@ def is_sorted(items):
 
 
 
-def bubble_sort_slow(items):
+def bubble_sort(items):
     """Sort given items by swapping adjacent items that are out of order, and
     repeating until all items are in sorted order.
     TODO: Running time: ??? Why and under what conditions?
     TODO: Memory usage: ??? Why and under what conditions?"""
     # Repeat until all items are in sorted order
     # for index, item in enumerate(items):
+    if len(items) <= 1:
+      return items
     while not is_sorted(items):
       for index in range(len(items) - 1):
         if items[index] > items[index + 1]:
@@ -28,7 +30,7 @@ def bubble_sort_slow(items):
     return items
 
 # TODO: COCKTAIL SORT!?!?!!?
-def bubble_sort(items):
+def bubble_sort_fast(items):
     """Sort given items by swapping adjacent items that are out of order, and
     repeating until all items are in sorted order.
     TODO: Running time: ??? Why and under what conditions?
@@ -105,6 +107,6 @@ def insertion_sort(items):
       items[rev_index + 1] = item
     return items
 
-if __name__ == '__main__':
-  nums = [4, 10, 2, 5 ,6, 3]
-  print(bubble_sort_slow(nums))
+# if __name__ == '__main__':
+#   nums = [4, 10, 2, 5 ,6, 3]
+#   print(bubble_sort_slow(nums))

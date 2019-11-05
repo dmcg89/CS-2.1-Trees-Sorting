@@ -99,6 +99,8 @@ def quick_sort(items, low=None, high=None):
     #  Check if list or range is so small it's already sorted (base case)
     #  Check if high and low range bounds have default values (not given)
     #  Select arbitrary pivot point (first item)
+    if len(items) <= 1:
+      return
     if low == None and high == None:
       high = len(items)
       low = 0
@@ -113,14 +115,14 @@ def quick_sort(items, low=None, high=None):
     quick_sort(items, pivot + 1, high)
 
 
-items1 = [3, 5, 7, 8]
-items2 = [21, 4, 7, -3, 5, -1, 6, 8, 20]
+# items1 = [3, 5, 7, 8]
+# items2 = [9, 21, 4, 7, 9, -3, 5, -1, 6, 8, 20]
 
+# # print(items2)
+# # print(partition(items2, 0, len(items2)))
+# # print(items2)
+# quick_sort(items2)
 # print(items2)
-# print(partition(items2, 0, len(items2)))
-print(items2)
-quick_sort(items2)
-print(items2)
 
 
 
