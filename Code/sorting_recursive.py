@@ -4,8 +4,8 @@
 def merge(items1, items2):
     """Merge given lists of items, each assumed to already be in sorted order,
     and return a new list containing all items in sorted order.
-    TODO: Running time: ??? Why and under what conditions?
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    Running time: O(n)
+    Memory usage: O(n)"""
     i = 0
     j = 0
     merged_list = []
@@ -50,8 +50,8 @@ def split_sort_merge(items):
 def merge_sort(items):
     """Sort given items by splitting list into two approximately equal halves,
     sorting each recursively, and merging results into a list in sorted order.
-    TODO: Running time: ??? Why and under what conditions?
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    Running time: O(n*log(n)) - under all conditions
+    Memory usage: O(n*log(n)) - under all conditions"""
     #  Check if list is so small it's already sorted (base case)
     if len(items) <= 1: return items 
     #  Split items list into approximately equal halves
@@ -68,8 +68,9 @@ def partition(items, low, high):
     `[low...high]` by choosing a pivot (TODO: document your method here) from
     that range, moving pivot into index `p`, items less than pivot into range
     `[low...p-1]`, and items greater than pivot into range `[p+1...high]`.
-    TODO: Running time: ??? Why and under what conditions?
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    Running time: O(n)
+    Memory usage: O(n)"""
+    # TODO: Refactor for random pivot
     #  Choose a pivot any way and document your method in docstring above
     pivot = low
     moved_items = 0
@@ -94,9 +95,9 @@ def partition(items, low, high):
 def quick_sort(items, low=None, high=None):
     """Sort given items in place by partitioning items in range `[low...high]`
     around a pivot item and recursively sorting each remaining sublist range.
-    TODO: Best case running time: ??? Why and under what conditions?
-    TODO: Worst case running time: ??? Why and under what conditions?
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    Best case running time: O(n*log(n)) - selected pivots are in the middle of desired range
+    Worst case running time: O(n^2) - selected pivots are near min/max of range
+    Memory usage: ^^^  """
     #  Check if list or range is so small it's already sorted (base case)
     #  Check if high and low range bounds have default values (not given)
     #  Select arbitrary pivot point (first item)
