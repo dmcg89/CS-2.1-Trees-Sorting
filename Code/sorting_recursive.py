@@ -59,7 +59,8 @@ def merge_sort(items):
     #  Sort each half by recursively calling merge sort
     left, right = merge_sort(items1), merge_sort(items2)
     #  Merge sorted halves into one list in sorted order
-    return merge(left, right)
+    items[:] = merge(left, right)
+    return items
 
 
 def partition(items, low, high):
