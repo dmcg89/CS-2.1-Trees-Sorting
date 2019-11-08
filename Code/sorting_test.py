@@ -171,7 +171,9 @@ class StringSortTest(unittest.TestCase):
         assert items3 == ['A', 'B', 'C']
         # TODO: Write more test cases with assert equal list statements
         # You'll need a lot more than this to test sorting algorithm robustness
-        # ...
+        items4 = [4, 5, 3, 1]
+        sort(items4)
+        assert items4 == [1, 3, 4, 5]
 
     def test_sort_on_fish_book_title(self):
         items = 'one fish two fish red fish blue fish'.split()
