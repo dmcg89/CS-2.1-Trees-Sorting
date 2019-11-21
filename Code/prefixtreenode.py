@@ -39,8 +39,7 @@ class PrefixTreeNode:
         """Return True if this prefix tree node has a child node that
         represents the given character amongst its children."""
         #  Check if given character is amongst this node's children
-        if character in self.children:
-            return True
+        if character in self.children: return True
         return False
 
     def get_child(self, character):
