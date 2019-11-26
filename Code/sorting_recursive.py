@@ -4,8 +4,8 @@
 def merge(items1, items2):
     """Merge given lists of items, each assumed to already be in sorted order,
     and return a new list containing all items in sorted order.
-    Running time: O(n)
-    Memory usage: O(n)"""
+    Running time: O(n) - iterates through all items of in inputs
+    Memory usage: O(n) - creates a new list the size of both inputs"""
     i = 0
     j = 0
     merged_list = []
@@ -50,15 +50,16 @@ def split_sort_merge(items):
 def merge_sort(items):
     """Sort given items by splitting list into two approximately equal halves,
     sorting each recursively, and merging results into a list in sorted order.
-    Running time: O(n*log(n)) - under all conditions
-    Memory usage: O(n*log(n)) - under all conditions"""
+    Running time: O(n*log(n)) - under all conditions, input is split in half log(n) times, then
+                  sorted using merge taking n time
+    Memory usage: O(n*log(n)) - under all conditions, array is split in half log(n) times"""
     #  Check if list is so small it's already sorted (base case)
     if len(items) <= 1: return items 
     #  Split items list into approximately equal halves
     items1, items2 = items[:len(items) // 2], items[len(items) // 2:]
     #  Sort each half by recursively calling merge sort
     left, right = merge_sort(items1), merge_sort(items2)
-    #  Merge sorted halves into one list in sorted order
+    #  Merge sorted halves intox one list in sorted order
     items[:] = merge(left, right)
     return items
 
@@ -69,7 +70,7 @@ def partition(items, low, high):
     that range, moving pivot into index `p`, items less than pivot into range
     `[low...p-1]`, and items greater than pivot into range `[p+1...high]`.
     Running time: O(n)
-    Memory usage: O(n)"""
+    Memory usage: O(1)"""
     # TODO: Refactor for random pivot
     #  Choose a pivot any way and document your method in docstring above
     pivot = low
