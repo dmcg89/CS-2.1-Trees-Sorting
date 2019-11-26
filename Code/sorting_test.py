@@ -3,10 +3,29 @@
 import random
 from sorting import random_ints
 from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort
-from sorting_recursive import split_sort_merge, merge_sort, quick_sort
+from sorting_recursive import split_sort_merge, merge_sort, quick_sort, merge
 from sorting_integer import counting_sort, bucket_sort
 import unittest
 
+class MergeTest(unittest.TestCase):
+
+    def test_merge(self):
+        items1, items2 = [1, 2], [3, 4]  # in order
+        list1 = merge(items1, items2)
+        assert list1 == [1, 2, 3, 4]
+        items1, items2 = [1, 2, 3], [3, 4, 5]  # duplicate input
+        list1 = merge(items1, items2)
+        assert list1 == [1, 2, 3, 3, 4, 5]
+        items1, items2 = [1, 2, 3], [4, 5, 6]
+        list1 = merge(items1, items2)
+        assert list1 == [1, 2, 3, 4, 5, 6]
+        items1, items2 = [1, 2, 3, 4], [3, 4, 5, 6]  # multiple duplicates/overlap
+        list1 = merge(items1, items2)
+        assert list1 == [1, 2, 3, 3, 4, 4, 5, 6]
+
+    def test_merge_sort(self):
+        #  Implemented  more tests in the integer and string sort classes
+        pass
 
 class IsSortedTest(unittest.TestCase):
 
@@ -42,9 +61,9 @@ class IsSortedTest(unittest.TestCase):
         assert is_sorted(['B', 'A']) is False
         assert is_sorted(['A', 'B', 'A']) is False
         assert is_sorted(['C', 'B', 'A']) is False
-        # TODO: Write more negative test cases with assert is False statements
-        # You'll need a lot more than this to test sorting algorithm robustness
-        # ...
+        # Write more negative test cases with assert is False statements
+        assert is_sorted(['Z', 'Z', 'Z', 'A']) is False
+
 
     def test_is_sorted_on_sorted_tuples(self):
         # Positive test cases (examples) with lists of sorted tuples
@@ -177,9 +196,9 @@ class StringSortTest(unittest.TestCase):
         assert items3 == ['A', 'B', 'C']
         # TODO: Write more test cases with assert equal list statements
         # You'll need a lot more than this to test sorting algorithm robustness
-        items4 = [4, 5, 3, 1]
+        items4 = ['B', 'C', 'C', 'A'] # Duplicate values
         sort(items4)
-        assert items4 == [1, 3, 4, 5]
+        assert items4 == ['A', 'B', 'C', 'C']
 
     def test_sort_on_fish_book_title(self):
         items = 'one fish two fish red fish blue fish'.split()
