@@ -1,6 +1,5 @@
 #!python
 
-
 def merge(items1, items2):
     """Merge given lists of items, each assumed to already be in sorted order,
     and return a new list containing all items in sorted order.
@@ -12,12 +11,7 @@ def merge(items1, items2):
     #  Repeat until one list is empty
     while i < len(items1) and j < len(items2):
     #  Find minimum item in both lists and append it to new list
-      if items1[i] == items2[j]:
-        merged_list.append(items1[i])
-        merged_list.append(items1[i])
-        i += 1
-        j += 1
-      elif items1[i] < items2[j]:
+      if items1[i] <= items2[j]:
         merged_list.append(items1[i])
         i += 1
       elif items1[i] > items2[j]:
@@ -36,15 +30,18 @@ def split_sort_merge(items):
     """Sort given items by splitting list into two approximately equal halves,
     sorting each with an iterative sorting algorithm, and merging results into
     a list in sorted order.
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    Memory usage: 2 new lists are created, resulting in O(n) memory usage, however the 
+    sorted list to return happens in place"""
+    if len(items) < 2: return items
     #  Split items list into approximately equal halves
     mid_i = len(items) // 2
     items1, items2 = items[:mid_i], items[mid_i:]
     #  Sort each half using any other sorting algorithm
-    items1, items2 = sorted(items1), sorted(items2)
-    #  Merge sorted halves into one list in sorted order
-    return_list = merge(items1, items2)
-    return return_list
+    items1, items2 = merge_sort(items1), merge_sort(items2)
+    #  Merge sorted halves into one list (in place) in sorted order
+    items[:] = merge(items1, items2)
+    return items
+
 
 
 def merge_sort(items):
@@ -98,7 +95,7 @@ def quick_sort(items, low=None, high=None):
     around a pivot item and recursively sorting each remaining sublist range.
     Best case running time: O(n*log(n)) - selected pivots are in the middle of desired range
     Worst case running time: O(n^2) - selected pivots are near min/max of range
-    Memory usage: ^^^  """
+    Memory usage: O(n) """
     #  Check if list or range is so small it's already sorted (base case)
     #  Check if high and low range bounds have default values (not given)
     #  Select arbitrary pivot point (first item)
@@ -116,16 +113,3 @@ def quick_sort(items, low=None, high=None):
     # Sort each sublist range by recursively calling quick sort
     quick_sort(items, low, pivot)
     quick_sort(items, pivot + 1, high)
-
-
-# items1 = [3, 5, 7, 8]
-# items2 = [9, 21, 4, 7, 9, -3, 5, -1, 6, 8, 20]
-
-# # print(items2)
-# # print(partition(items2, 0, len(items2)))
-# # print(items2)
-# quick_sort(items2)
-# print(items2)
-
-
-
