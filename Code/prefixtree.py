@@ -55,11 +55,11 @@ class PrefixTree:
             else:
                 curr_node.add_child(char, PrefixTreeNode(char))
                 curr_node = curr_node.get_child(char)
-                self.size += 1
 
             # Change last node in str to terminal
             if indx == len(string) - 1:
                 curr_node.terminal = True
+                self.size += 1
 
 
     def _find_node(self, string):
@@ -94,18 +94,24 @@ class PrefixTree:
 
         # Create a list of completions in prefix tree
         completions = []
-        if self._find_node(prefix) == True: completions.append(prefix)
 
-        # Get node of last char in prefix
         node = self._find_node(prefix)[0]
-
-        # Return none if tree is empty
-        if self.is_empty() or node is None: return None
-
-        self._traverse(node, prefix, completions.append)
         
-        return completions
+        if node == None:
+            return completions
 
+        # Return none if tree is empty or prefix not in tree
+        # if self.is_empty() or node is None: return completions
+
+        # Traverse through tree to complete prefix
+        if not self.is_empty():
+            self._traverse(node, prefix, completions.append)
+
+        # Return sole prefix if prefix is already completed
+        # if self._find_node(prefix) and completions == []:
+        #     completions.append(prefix)
+
+        return completions
 
     def strings(self):
         """Return a list of all strings stored in this prefix tree."""
@@ -115,13 +121,21 @@ class PrefixTree:
     def _traverse(self, node, prefix, visit):
         """Traverse this prefix tree with recursive depth-first traversal.
         Start at the given node and visit each node with the given function."""
-        for char_id in node.children:
-            child = node.get_child(char_id)
-            if child:
-                if child.is_terminal():
-                    visit(prefix + child.character)
+        # for char_id in node.children:
+        #     child = node.get_child(char_id)
+        #     if child:
+        #         if child.is_terminal():
+        #             visit(prefix + child.character)
                 
-                self._traverse(child, prefix + child.character, visit)
+        #         self._traverse(child, prefix + child.character, visit)
+        print(node)
+        if node.is_terminal() and node is not None:
+            visit(prefix)
+        
+        for child_id in node.children:
+            child = node.get_child(child_id)
+            if child:
+                visit(prefix + child.character)
 
 
 

@@ -1,0 +1,189 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BinaryMinHeap	../binaryheap.py	/^class BinaryMinHeap(object):$/;"	kind:class	line:4
+BinaryMinHeap	../binaryheap_test.py	/^from binaryheap import BinaryMinHeap$/;"	kind:namespace	line:3
+BinaryMinHeap	../priorityqueue.py	/^from binaryheap import BinaryMinHeap$/;"	kind:namespace	line:3
+CHILDREN_TYPE	../prefixtreenode.py	/^    CHILDREN_TYPE = dict$/;"	kind:variable	line:12
+IntegerSortTest	../sorting_test.py	/^class IntegerSortTest(unittest.TestCase):$/;"	kind:class	line:101
+IsSortedTest	../sorting_test.py	/^class IsSortedTest(unittest.TestCase):$/;"	kind:class	line:30
+MergeTest	../sorting_test.py	/^class MergeTest(unittest.TestCase):$/;"	kind:class	line:10
+PrefixTree	../prefixtree.py	/^class PrefixTree:$/;"	kind:class	line:6
+PrefixTree	../prefixtree_test.py	/^from prefixtree import PrefixTree, PrefixTreeNode$/;"	kind:namespace	line:3
+PrefixTreeNode	../prefixtree.py	/^from prefixtreenode import PrefixTreeNode$/;"	kind:namespace	line:3
+PrefixTreeNode	../prefixtree_test.py	/^from prefixtree import PrefixTree, PrefixTreeNode$/;"	kind:namespace	line:3
+PrefixTreeNode	../prefixtreenode.py	/^class PrefixTreeNode:$/;"	kind:class	line:4
+PrefixTreeNode	../prefixtreenode_test.py	/^from prefixtreenode import PrefixTreeNode$/;"	kind:namespace	line:3
+PrefixTreeNodeTest	../prefixtreenode_test.py	/^class PrefixTreeNodeTest(unittest.TestCase):$/;"	kind:class	line:7
+PrefixTreeTest	../prefixtree_test.py	/^class PrefixTreeTest(unittest.TestCase):$/;"	kind:class	line:7
+PriorityQueue	../priorityqueue.py	/^class PriorityQueue(object):$/;"	kind:class	line:6
+RecursionTest	../recursion_test.py	/^class RecursionTest(unittest.TestCase):$/;"	kind:class	line:7
+START_CHARACTER	../prefixtree.py	/^    START_CHARACTER = ''$/;"	kind:variable	line:19
+StringSortTest	../sorting_test.py	/^class StringSortTest(unittest.TestCase):$/;"	kind:class	line:185
+TestBinaryMinHeap	../binaryheap_test.py	/^class TestBinaryMinHeap(unittest.TestCase):$/;"	kind:class	line:8
+Trie	../autocomplete.py	/^        from trie import Trie$/;"	kind:namespace	line:29
+__init__	../binaryheap.py	/^    def __init__(self, items=None):$/;"	kind:member	line:10
+__init__	../prefixtree.py	/^    def __init__(self, strings=None):$/;"	kind:member	line:21
+__init__	../prefixtreenode.py	/^    def __init__(self, character=None):$/;"	kind:member	line:14
+__init__	../priorityqueue.py	/^    def __init__(self):$/;"	kind:member	line:11
+__repr__	../binaryheap.py	/^    def __repr__(self):$/;"	kind:member	line:18
+__repr__	../prefixtree.py	/^    def __repr__(self):$/;"	kind:member	line:32
+__repr__	../prefixtreenode.py	/^    def __repr__(self):$/;"	kind:member	line:58
+__repr__	../priorityqueue.py	/^    def __repr__(self):$/;"	kind:member	line:16
+__str__	../prefixtreenode.py	/^    def __str__(self):$/;"	kind:member	line:62
+_bubble_down	../binaryheap.py	/^    def _bubble_down(self, index):$/;"	kind:member	line:105
+_bubble_up	../binaryheap.py	/^    def _bubble_up(self, index):$/;"	kind:member	line:83
+_find_node	../prefixtree.py	/^    def _find_node(self, string):$/;"	kind:member	line:65
+_last_index	../binaryheap.py	/^    def _last_index(self):$/;"	kind:member	line:141
+_left_child_index	../binaryheap.py	/^    def _left_child_index(self, index):$/;"	kind:member	line:151
+_parent_index	../binaryheap.py	/^    def _parent_index(self, index):$/;"	kind:member	line:145
+_right_child_index	../binaryheap.py	/^    def _right_child_index(self, index):$/;"	kind:member	line:155
+_traverse	../prefixtree.py	/^    def _traverse(self, node, prefix, visit):$/;"	kind:member	line:121
+add_child	../prefixtreenode.py	/^    def add_child(self, character, child_node):$/;"	kind:member	line:49
+autocomplete	../autocomplete.py	/^def autocomplete(prefix, structure, algorithm='linear_search'):$/;"	kind:function	line:34
+autocomplete.py	../autocomplete.py	1;"	kind:file	line:1
+autocomplete_setup	../autocomplete.py	/^def autocomplete_setup(vocabulary, algorithm='linear_search'):$/;"	kind:function	line:22
+binaryheap.py	../binaryheap.py	1;"	kind:file	line:1
+binaryheap_test.py	../binaryheap_test.py	1;"	kind:file	line:1
+bubble_sort	../sorting.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:3
+bubble_sort	../sorting_iterative.py	/^def bubble_sort(items):$/;"	kind:function	line:14
+bubble_sort	../sorting_test.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:5
+bucket_sort	../sorting.py	/^from sorting_integer import counting_sort, bucket_sort$/;"	kind:namespace	line:5
+bucket_sort	../sorting_integer.py	/^def bucket_sort(numbers, num_buckets=10):$/;"	kind:function	line:36
+bucket_sort	../sorting_test.py	/^from sorting_integer import counting_sort, bucket_sort$/;"	kind:namespace	line:7
+complete	../prefixtree.py	/^    def complete(self, prefix=''):$/;"	kind:member	line:91
+contains	../prefixtree.py	/^    def contains(self, string):$/;"	kind:member	line:40
+counting_sort	../sorting.py	/^from sorting_integer import counting_sort, bucket_sort$/;"	kind:namespace	line:5
+counting_sort	../sorting_integer.py	/^def counting_sort(numbers):$/;"	kind:function	line:10
+counting_sort	../sorting_test.py	/^from sorting_integer import counting_sort, bucket_sort$/;"	kind:namespace	line:7
+create_prefix_tree	../prefixtree.py	/^def create_prefix_tree(strings):$/;"	kind:function	line:143
+delete_min	../binaryheap.py	/^    def delete_min(self):$/;"	kind:member	line:49
+dequeue	../priorityqueue.py	/^    def dequeue(self):$/;"	kind:member	line:42
+enqueue	../priorityqueue.py	/^    def enqueue(self, item, priority):$/;"	kind:member	line:28
+fibonacci	../recursion.py	/^def fibonacci(n):$/;"	kind:function	line:3
+fibonacci	../recursion_test.py	/^from recursion import fibonacci$/;"	kind:namespace	line:3
+fibonacci_dynamic	../recursion.py	/^def fibonacci_dynamic(n):$/;"	kind:function	line:36
+fibonacci_memoized	../recursion.py	/^def fibonacci_memoized(n):$/;"	kind:function	line:29
+fibonacci_recursive	../recursion.py	/^def fibonacci_recursive(n):$/;"	kind:function	line:19
+front	../priorityqueue.py	/^    def front(self):$/;"	kind:member	line:34
+generate_prefixes	../autocomplete.py	/^def generate_prefixes(vocabulary):$/;"	kind:function	line:16
+get_child	../prefixtreenode.py	/^    def get_child(self, character):$/;"	kind:member	line:41
+get_lines	../autocomplete.py	/^def get_lines(filename='\/usr\/share\/dict\/words'):$/;"	kind:function	line:7
+get_min	../binaryheap.py	/^    def get_min(self):$/;"	kind:member	line:41
+get_sort_function	../sorting_test.py	/^def get_sort_function():$/;"	kind:function	line:216
+has_child	../prefixtreenode.py	/^    def has_child(self, character):$/;"	kind:member	line:34
+insert	../binaryheap.py	/^    def insert(self, item):$/;"	kind:member	line:32
+insert	../prefixtree.py	/^    def insert(self, string):$/;"	kind:member	line:44
+insertion_sort	../sorting.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:3
+insertion_sort	../sorting_iterative.py	/^def insertion_sort(items):$/;"	kind:function	line:55
+insertion_sort	../sorting_test.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:5
+is_empty	../binaryheap.py	/^    def is_empty(self):$/;"	kind:member	line:22
+is_empty	../prefixtree.py	/^    def is_empty(self):$/;"	kind:member	line:36
+is_empty	../priorityqueue.py	/^    def is_empty(self):$/;"	kind:member	line:20
+is_sorted	../sorting.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:3
+is_sorted	../sorting_iterative.py	/^def is_sorted(items):$/;"	kind:function	line:4
+is_sorted	../sorting_test.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:5
+is_terminal	../prefixtreenode.py	/^    def is_terminal(self):$/;"	kind:member	line:24
+length	../priorityqueue.py	/^    def length(self):$/;"	kind:member	line:24
+main	../autocomplete.py	/^def main():$/;"	kind:function	line:45
+main	../recursion.py	/^def main():$/;"	kind:function	line:43
+main	../sorting.py	/^def main():$/;"	kind:function	line:29
+merge	../sorting_recursive.py	/^def merge(items1, items2):$/;"	kind:function	line:3
+merge	../sorting_test.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort, merge$/;"	kind:namespace	line:6
+merge_sort	../sorting.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort$/;"	kind:namespace	line:4
+merge_sort	../sorting_recursive.py	/^def merge_sort(items):$/;"	kind:function	line:47
+merge_sort	../sorting_test.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort, merge$/;"	kind:namespace	line:6
+min_max	../sorting_integer.py	/^def min_max(numbers):$/;"	kind:function	line:4
+num_children	../prefixtreenode.py	/^    def num_children(self):$/;"	kind:member	line:29
+numbers	../sorting_integer.py	/^  numbers = [2, 1, 4, 7, 6, 2, 1, 2]$/;"	kind:variable	line:60
+partition	../sorting_recursive.py	/^def partition(items, low, high):$/;"	kind:function	line:64
+prefixtree.py	../prefixtree.py	1;"	kind:file	line:1
+prefixtree_test.py	../prefixtree_test.py	1;"	kind:file	line:1
+prefixtreenode.py	../prefixtreenode.py	1;"	kind:file	line:1
+prefixtreenode_test.py	../prefixtreenode_test.py	1;"	kind:file	line:1
+priorityqueue.py	../priorityqueue.py	1;"	kind:file	line:1
+push_pop	../priorityqueue.py	/^    def push_pop(self, item, priority):$/;"	kind:member	line:50
+quick_sort	../sorting.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort$/;"	kind:namespace	line:4
+quick_sort	../sorting_integer.py	/^from sorting_recursive import quick_sort$/;"	kind:namespace	line:2
+quick_sort	../sorting_recursive.py	/^def quick_sort(items, low=None, high=None):$/;"	kind:function	line:93
+quick_sort	../sorting_test.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort, merge$/;"	kind:namespace	line:6
+random	../binaryheap_test.py	/^import random$/;"	kind:namespace	line:4
+random	../sorting.py	/^    import random$/;"	kind:namespace	line:11
+random	../sorting_test.py	/^import random$/;"	kind:namespace	line:3
+random_ints	../sorting.py	/^def random_ints(count=20, min=1, max=50):$/;"	kind:function	line:8
+random_ints	../sorting_test.py	/^from sorting import random_ints$/;"	kind:namespace	line:4
+recursion.py	../recursion.py	1;"	kind:file	line:1
+recursion_test.py	../recursion_test.py	1;"	kind:file	line:1
+replace_min	../binaryheap.py	/^    def replace_min(self, item):$/;"	kind:member	line:67
+selection_sort	../sorting.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:3
+selection_sort	../sorting_iterative.py	/^def selection_sort(items):$/;"	kind:function	line:31
+selection_sort	../sorting_test.py	/^from sorting_iterative import is_sorted, bubble_sort, selection_sort, insertion_sort$/;"	kind:namespace	line:5
+size	../binaryheap.py	/^    def size(self):$/;"	kind:member	line:28
+sort	../sorting_test.py	/^sort = split_sort_merge$/;"	kind:variable	line:246
+sorting.py	../sorting.py	1;"	kind:file	line:1
+sorting_integer.py	../sorting_integer.py	1;"	kind:file	line:1
+sorting_iterative.py	../sorting_iterative.py	1;"	kind:file	line:1
+sorting_recursive.py	../sorting_recursive.py	1;"	kind:file	line:1
+sorting_test.py	../sorting_test.py	1;"	kind:file	line:1
+split_sort_merge	../sorting.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort$/;"	kind:namespace	line:4
+split_sort_merge	../sorting_recursive.py	/^def split_sort_merge(items):$/;"	kind:function	line:29
+split_sort_merge	../sorting_test.py	/^from sorting_recursive import split_sort_merge, merge_sort, quick_sort, merge$/;"	kind:namespace	line:6
+strings	../prefixtree.py	/^    def strings(self):$/;"	kind:member	line:116
+sys	../autocomplete.py	/^import sys$/;"	kind:namespace	line:3
+sys	../recursion.py	/^    import sys$/;"	kind:namespace	line:44
+sys	../sorting.py	/^    import sys$/;"	kind:namespace	line:31
+sys	../sorting_test.py	/^    import sys$/;"	kind:namespace	line:218
+test_binary_min_heap	../binaryheap.py	/^def test_binary_min_heap():$/;"	kind:function	line:160
+test_child_index	../binaryheap_test.py	/^    def test_child_index(self):$/;"	kind:member	line:97
+test_child_methods	../prefixtreenode_test.py	/^    def test_child_methods(self):$/;"	kind:member	line:23
+test_complete	../prefixtree_test.py	/^    def test_complete(self):$/;"	kind:member	line:216
+test_contains	../prefixtree_test.py	/^    def test_contains(self):$/;"	kind:member	line:196
+test_delete_min_on_empty_heap	../binaryheap_test.py	/^    def test_delete_min_on_empty_heap(self):$/;"	kind:member	line:18
+test_fibonacci_with_floating_point_numbers	../recursion_test.py	/^    def test_fibonacci_with_floating_point_numbers(self):$/;"	kind:member	line:40
+test_fibonacci_with_large_integers	../recursion_test.py	/^    def test_fibonacci_with_large_integers(self):$/;"	kind:member	line:22
+test_fibonacci_with_negative_integers	../recursion_test.py	/^    def test_fibonacci_with_negative_integers(self):$/;"	kind:member	line:33
+test_fibonacci_with_small_integers	../recursion_test.py	/^    def test_fibonacci_with_small_integers(self):$/;"	kind:member	line:8
+test_get_min_on_empty_heap	../binaryheap_test.py	/^    def test_get_min_on_empty_heap(self):$/;"	kind:member	line:13
+test_init_and_properties	../prefixtree_test.py	/^    def test_init_and_properties(self):$/;"	kind:member	line:9
+test_init_and_properties	../prefixtreenode_test.py	/^    def test_init_and_properties(self):$/;"	kind:member	line:9
+test_init_with_string	../prefixtree_test.py	/^    def test_init_with_string(self):$/;"	kind:member	line:20
+test_insert_and_delete_many_items	../binaryheap_test.py	/^    def test_insert_and_delete_many_items(self):$/;"	kind:member	line:58
+test_insert_and_delete_many_random_items	../binaryheap_test.py	/^    def test_insert_and_delete_many_random_items(self):$/;"	kind:member	line:68
+test_insert_and_delete_one_item	../binaryheap_test.py	/^    def test_insert_and_delete_one_item(self):$/;"	kind:member	line:51
+test_insert_and_get_many_items	../binaryheap_test.py	/^    def test_insert_and_get_many_items(self):$/;"	kind:member	line:30
+test_insert_and_get_many_random_items	../binaryheap_test.py	/^    def test_insert_and_get_many_random_items(self):$/;"	kind:member	line:41
+test_insert_and_get_one_item	../binaryheap_test.py	/^    def test_insert_and_get_one_item(self):$/;"	kind:member	line:23
+test_insert_with_4_strings	../prefixtree_test.py	/^    def test_insert_with_4_strings(self):$/;"	kind:member	line:53
+test_insert_with_string	../prefixtree_test.py	/^    def test_insert_with_string(self):$/;"	kind:member	line:33
+test_is_sorted_on_sorted_integers	../sorting_test.py	/^    def test_is_sorted_on_sorted_integers(self):$/;"	kind:member	line:32
+test_is_sorted_on_sorted_strings	../sorting_test.py	/^    def test_is_sorted_on_sorted_strings(self):$/;"	kind:member	line:50
+test_is_sorted_on_sorted_tuples	../sorting_test.py	/^    def test_is_sorted_on_sorted_tuples(self):$/;"	kind:member	line:68
+test_is_sorted_on_unsorted_integers	../sorting_test.py	/^    def test_is_sorted_on_unsorted_integers(self):$/;"	kind:member	line:42
+test_is_sorted_on_unsorted_strings	../sorting_test.py	/^    def test_is_sorted_on_unsorted_strings(self):$/;"	kind:member	line:59
+test_is_sorted_on_unsorted_tuples	../sorting_test.py	/^    def test_is_sorted_on_unsorted_tuples(self):$/;"	kind:member	line:88
+test_merge	../sorting_test.py	/^    def test_merge(self):$/;"	kind:member	line:12
+test_merge_sort	../sorting_test.py	/^    def test_merge_sort(self):$/;"	kind:member	line:26
+test_parent_index	../binaryheap_test.py	/^    def test_parent_index(self):$/;"	kind:member	line:78
+test_size_and_is_empty	../prefixtree_test.py	/^    def test_size_and_is_empty(self):$/;"	kind:member	line:143
+test_size_of_empty_heap	../binaryheap_test.py	/^    def test_size_of_empty_heap(self):$/;"	kind:member	line:9
+test_size_with_repeated_insert	../prefixtree_test.py	/^    def test_size_with_repeated_insert(self):$/;"	kind:member	line:165
+test_sort_on_empty_list	../sorting_test.py	/^    def test_sort_on_empty_list(self):$/;"	kind:member	line:103
+test_sort_on_fish_book_title	../sorting_test.py	/^    def test_sort_on_fish_book_title(self):$/;"	kind:member	line:203
+test_sort_on_lists_of_random_integers	../sorting_test.py	/^    def test_sort_on_lists_of_random_integers(self):$/;"	kind:member	line:141
+test_sort_on_lists_of_random_integers_with_duplicates	../sorting_test.py	/^    def test_sort_on_lists_of_random_integers_with_duplicates(self):$/;"	kind:member	line:165
+test_sort_on_seven_dwarf_names	../sorting_test.py	/^    def test_sort_on_seven_dwarf_names(self):$/;"	kind:member	line:209
+test_sort_on_small_lists_of_integers	../sorting_test.py	/^    def test_sort_on_small_lists_of_integers(self):$/;"	kind:member	line:108
+test_sort_on_small_lists_of_integers_with_duplicates	../sorting_test.py	/^    def test_sort_on_small_lists_of_integers_with_duplicates(self):$/;"	kind:member	line:124
+test_sort_on_small_lists_of_strings	../sorting_test.py	/^    def test_sort_on_small_lists_of_strings(self):$/;"	kind:member	line:187
+test_sorting	../sorting.py	/^def test_sorting(sort=bubble_sort, num_items=20, max_value=50):$/;"	kind:function	line:15
+test_strings	../prefixtree_test.py	/^    def test_strings(self):$/;"	kind:member	line:236
+time	../autocomplete.py	/^import time$/;"	kind:namespace	line:4
+tongue_twisters	../prefixtree.py	/^    tongue_twisters = {$/;"	kind:variable	line:201
+unittest	../binaryheap_test.py	/^import unittest$/;"	kind:namespace	line:5
+unittest	../prefixtree_test.py	/^import unittest$/;"	kind:namespace	line:4
+unittest	../prefixtreenode_test.py	/^import unittest$/;"	kind:namespace	line:4
+unittest	../recursion_test.py	/^import unittest$/;"	kind:namespace	line:4
+unittest	../sorting_test.py	/^import unittest$/;"	kind:namespace	line:8
